@@ -2,7 +2,7 @@ import { MessageBody, SubscribeMessage, WebSocketGateway, WsResponse } from "@ne
 import { from, Observable } from "rxjs"
 import { map } from "rxjs/operators"
 
-@WebSocketGateway({ /* options */ })
+@WebSocketGateway(3001, { /* options */ })
 export class EventsGateway {
 	
 	@SubscribeMessage("events")
